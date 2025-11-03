@@ -24,6 +24,8 @@ class Settings(BaseSettings):
     DATABASE_URL: str = Field(..., description="SQLAlchemy connection string for PostgreSQL")
 
     # CORS
+    # Accepts either a JSON array via env or a single CSV string (handled by get_cors_origins).
+    # Example: CORS_ORIGINS=http://localhost:3000 or CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000
     CORS_ORIGINS: List[str] = Field(default_factory=lambda: ["*"], description="Allowed CORS origins")
 
     # Auth
