@@ -1,1 +1,3 @@
-# ai-blog-generator-app-24754-25861
+# BackendAPIService Workspace
+
+See `BackendAPIService/README.md` for service-specific instructions, environment variables, and quick start.
